@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- @file config.xml -->
+<!-- @author Juan José Escobar Pérez -->
+<!-- @date 25/06/2015 -->
+<!-- @brief File with the program configurations -->
+
+<Config>
+	<DataBaseName>data-178x480.txt</DataBaseName>
+	<NGenerations>20</NGenerations>
+	<MaxFeatures>48</MaxFeatures>
+	<TournamentSize>2</TournamentSize>
+	<CrossDistribution>20</CrossDistribution>
+	<MutDistribution>20</MutDistribution>
+	<KernelName>src/evaluation.cl</KernelName>
+	<DataName>gnuplot/dataPareto.txt</DataName>
+	<PlotName>gnuplot/plot</PlotName>
+	<ImageName>gnuplot/paretoFront</ImageName>
+	<OpenCL>
+		<DeviceType>GPU</DeviceType>
+		<!--<PlatformVendor>Advanced Micro Devices, Inc.</PlatformVendor>
+		<DeviceName>Intel(R) Xeon(R) CPU E5-2620 v2 @ 2.10GHz</DeviceName>-->
+		<PlatformVendor>NVIDIA Corporation</PlatformVendor>
+		<DeviceName>Tesla K20c</DeviceName>
+		<WiGlobal>3328</WiGlobal>
+		<WiLocal>256</WiLocal>
+		<MaxIndividualsOnGPUKernel>10000</MaxIndividualsOnGPUKernel>
+	</OpenCL>
+</Config>
